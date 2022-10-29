@@ -101,6 +101,8 @@ section {
   height: 4rem;
   padding: 1rem 3rem 1rem;
 
+  cursor: pointer;
+
   background: #883fff;
 
   border: 5px solid #883fff;
