@@ -1,0 +1,103 @@
+@import url(./reset.css);
+
+html {
+  width: 100vw;
+  height: 100vh;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.container {
+  width: 100%;
+
+  display: flex;
+  flex-direction: column;
+}
+
+section {
+  width: 100vw;
+  height: 100vh;
+
+  display: flex;
+  justify-content: center;
+
+  background: white;
+}
+
+.home {
+  background: linear-gradient(to bottom, #883fff, white);
+}
+
+.home-contents {
+  width: 80%;
+  height: 100%;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10rem;
+}
+
+.logo {
+  width: 350px;
+  padding: 2rem 5rem 2rem;
+
+  align-self: flex-start;
+}
+
+.home-cta {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.home-title {
+  font-size: 4rem;
+  font-weight: bold;
+
+  color: white;
+}
+
+.home-subtitle {
+  padding: 1rem;
+
+  font-size: 1.5rem;
+  font-weight: 600;
+
+  color: #883fff;
+}
+
+.home-form {
+  padding: 2rem;
+}
+
+.home-input {
+  height: 4rem;
+
+  margin: 1rem;
+  padding: 1rem 20rem 1rem 2rem;
+
+  background: white;
+  border: 5px solid #883fff;
+  border-radius: 2rem;
+
+  font-size: 1rem;
+}
+
+.home-button {
+  height: 4rem;
+  padding: 1rem 3rem 1rem;
+
+  background: #883fff;
+
+  border: 5px solid #883fff;
+  border-radius: 2rem;
+
+  font-size: 1.2rem;
+  font-weight: bold;
+  color: white;
+}

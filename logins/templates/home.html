@@ -5,17 +5,33 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="{% static 'home.css' %}" />
+    <link rel="stylesheet" href="{% static 'css/home.css' %}" />
     <title>Document</title>
   </head>
   <body>
     <div class="container">
       <section class="home">
-        <form method="POST" action="">
-          {% csrf_token %}
-          <input type="text" name="email" placeholder="이메일을 입력해주세요" />
-          <input type="submit" value="시작하기" />
-        </form>
+        <div class="home-contents">
+          <img
+            class="logo home-logo"
+            src="{% static 'img/logo.png' %}"
+            alt=""
+          />
+          <div class="home-cta">
+            <div class="home-title">더 이상 머리 망하지 마세요.</div>
+            <div class="home-subtitle">내 머리를 알고 실패없는 머리하기</div>
+            <form class="home-form" method="POST" action="">
+              {% csrf_token %}
+              <input
+                class="home-input"
+                type="text"
+                name="email"
+                placeholder="이메일을 입력해주세요"
+              />
+              <input class="home-button" type="submit" value="시작하기" />
+            </form>
+          </div>
+        </div>
       </section>
       <section>기능1</section>
       <section>기능2</section>
