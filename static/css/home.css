@@ -46,13 +46,17 @@ section {
 
   display: flex;
   flex-direction: column;
-  align-items: center;
   gap: 10rem;
 }
 
+.logo-wrapper {
+  position: sticky;
+  top: 0;
+}
+
 .logo {
-  width: 350px;
-  padding: 2rem 5rem 2rem;
+  width: 180px;
+  padding: 2rem 0 2rem;
 
   align-self: flex-start;
 }
@@ -66,9 +70,9 @@ section {
 }
 
 .home-title {
-  font-family: 'Cafe24Ssurround';
+  /* font-family: 'Cafe24Ssurround'; */
   font-size: 4rem;
-  font-weight: bold;
+  font-weight: 900;
 
   color: white;
 }
@@ -76,7 +80,7 @@ section {
 .home-subtitle {
   padding: 1rem;
 
-  font-family: 'Cafe24Ssurround';
+  /* font-family: 'Cafe24Ssurround'; */
   font-size: 1.5rem;
   font-weight: 600;
 
@@ -84,7 +88,10 @@ section {
 }
 
 .home-form {
+  width: 100%;
   padding: 3rem 0 3rem;
+
+  text-align: center;
 }
 
 .home-input {
@@ -116,9 +123,76 @@ section {
   color: white;
 }
 
-/* 휴대폰 && 태블릿 */
+/* 태블릿 */
 
-@media (max-width: 991px) {
+@media (min-width: 768px) and (max-width: 991px) {
+  .home-contents {
+    width: 80%;
+    height: 100%;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10rem;
+  }
+
+  .logo {
+    width: 150px;
+    padding: 2rem 0 2rem;
+
+    align-self: flex-start;
+  }
+
+  .home-title {
+    /* font-family: 'Cafe24Ssurround'; */
+    font-size: 3rem;
+    font-weight: 900;
+
+    color: white;
+  }
+
+  .home-subtitle {
+    padding: 1rem;
+
+    /* font-family: 'Cafe24Ssurround'; */
+    font-size: 1.2rem;
+    font-weight: 600;
+
+    color: #c29dff;
+  }
+
+  .home-input {
+    height: 3.5rem;
+
+    margin: 1rem;
+    padding: 1rem 15rem 1rem 2rem;
+
+    background: white;
+    border: 3px solid #883fff;
+    border-radius: 2rem;
+
+    font-size: 0.8rem;
+  }
+
+  .home-button {
+    height: 3.5rem;
+    padding: 1rem 2rem 1rem;
+
+    cursor: pointer;
+
+    background: #883fff;
+
+    border-radius: 2rem;
+
+    font-size: 0.8rem;
+    font-weight: bold;
+    color: white;
+  }
+}
+
+/* 휴대폰 */
+
+@media (max-width: 768px) {
   .home-contents {
     width: 80%;
     height: 100%;
@@ -142,12 +216,12 @@ section {
   }
 
   .home-title {
-    width: 50vw;
+    width: 55vw;
     word-break: keep-all;
 
     align-self: flex-start;
 
-    font-family: 'Cafe24Ssurround';
+    /* font-family: 'Cafe24Ssurround'; */
     font-size: 3rem;
     font-weight: bold;
 
@@ -158,7 +232,7 @@ section {
     padding: 1rem 0 1rem;
     align-self: flex-start;
 
-    font-family: 'Cafe24Ssurround';
+    /* font-family: 'Cafe24Ssurround'; */
     font-size: 1rem;
     font-weight: 600;
 
