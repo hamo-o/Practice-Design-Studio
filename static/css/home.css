@@ -26,11 +26,12 @@ body {
 }
 
 section {
-  width: 100vw;
+  width: 100%;
   height: 100vh;
 
   display: flex;
   justify-content: center;
+  align-items: center;
 
   background: white;
 }
@@ -57,6 +58,8 @@ section {
 }
 
 .home-cta {
+  width: 100%;
+
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -81,7 +84,7 @@ section {
 }
 
 .home-form {
-  padding: 3rem;
+  padding: 3rem 0 3rem;
 }
 
 .home-input {
@@ -111,4 +114,92 @@ section {
   font-size: 1.2rem;
   font-weight: bold;
   color: white;
+}
+
+/* 휴대폰 && 태블릿 */
+
+@media (max-width: 991px) {
+  .home-contents {
+    width: 80%;
+    height: 100%;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 5rem;
+  }
+
+  .logo {
+    width: 120px;
+    padding: 1rem 0 1rem;
+  }
+
+  .home-cta {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .home-title {
+    width: 50vw;
+    word-break: keep-all;
+
+    align-self: flex-start;
+
+    font-family: 'Cafe24Ssurround';
+    font-size: 3rem;
+    font-weight: bold;
+
+    color: white;
+  }
+
+  .home-subtitle {
+    padding: 1rem 0 1rem;
+    align-self: flex-start;
+
+    font-family: 'Cafe24Ssurround';
+    font-size: 1rem;
+    font-weight: 600;
+
+    color: #c29dff;
+  }
+
+  .home-form {
+    width: 100%;
+    padding: 2rem 0 2rem;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .home-input {
+    width: 100%;
+    height: 3rem;
+
+    margin: 1rem;
+    padding: 1rem;
+
+    background: white;
+    border: 3px solid #883fff;
+    border-radius: 2rem;
+
+    font-size: 0.8rem;
+  }
+
+  .home-button {
+    height: 3rem;
+    padding: 0.5rem 2rem 0.5rem;
+
+    cursor: pointer;
+
+    background: #883fff;
+
+    border-radius: 2rem;
+
+    font-size: 0.8rem;
+    font-weight: bold;
+    color: white;
+  }
 }
