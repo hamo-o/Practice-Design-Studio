@@ -46,7 +46,7 @@ section {
 
   display: flex;
   flex-direction: column;
-  gap: 20%;
+  gap: 20vh;
 }
 
 .logo-wrapper {
@@ -132,7 +132,7 @@ section {
 
     display: flex;
     flex-direction: column;
-    gap: 10rem;
+    gap: 20vh;
   }
 
   .logo {
@@ -198,7 +198,7 @@ section {
 
     display: flex;
     flex-direction: column;
-    gap: 5rem;
+    gap: 5vh;
   }
 
   .logo {
