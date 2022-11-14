@@ -180,6 +180,8 @@ section {
 }
 
 .problem {
+  height: 60vh;
+
   display: flex;
   flex-direction: column;
   gap: 2rem;
@@ -191,7 +193,7 @@ section {
   width: 30vw;
   padding: 1rem 3rem 1rem;
   margin: 2rem 15vw 2rem;
-  text-align: center;
+  text-align: center !important;
 
   border: 2.5px solid white;
   border-radius: 1.5rem;
@@ -205,6 +207,66 @@ section {
 
 .right {
   align-self: flex-end;
+  text-align: end;
+}
+
+.solution {
+  height: 35vh;
+  padding: 5rem;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+  font-size: 2.5rem;
+  font-weight: 600;
+  line-height: 140%;
+  text-align: center;
+
+  color: rgb(36, 36, 36);
+
+  background: white;
+}
+
+.solution-text-bold {
+  padding: 0 0.5rem 0;
+  font-weight: bold;
+  color: white;
+  background: #883fff;
+}
+
+.feat {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.feat-title {
+  width: 50vw;
+  padding: 2rem 7rem 2rem;
+
+  font-size: 2.5rem;
+  font-weight: bold;
+  word-break: keep-all;
+  line-height: 130%;
+
+  color: black;
+}
+
+.feat-stitle {
+  width: 50vw;
+  padding: 2rem 7rem 2rem;
+
+  font-size: 1.75rem;
+  word-break: keep-all;
+  line-height: 130%;
+}
+
+.end {
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .home-form {
@@ -243,20 +305,6 @@ section {
   font-size: 1.2rem;
   font-weight: bold;
   color: white;
-}
-
-.feature {
-  padding: 10rem;
-
-  height: 100%;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  gap: 2rem;
-}
-
-.feature > img {
-  width: 50vw;
 }
 
 /* 태블릿 */
