@@ -1,3 +1,4 @@
+const startBtn = document.querySelector('.start-button');
 const homeBtn = document.querySelector('.home-button');
 const modalBtn = document.querySelector('.modal-btn');
 const modal = document.querySelector('.modal-wrapper');

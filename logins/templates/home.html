@@ -43,37 +43,50 @@
           <div class="modal-btn">알겠어요</div>
         </div>
       </div>
-      <section class="home">
-        <div class="home-contents">
-          <div class="logo-wrapper">
-            <img class="logo" src="{% static 'img/logo.png' %}" alt="" />
+      <div class="logo-wrapper">
+        <img class="logo" src="{% static 'img/logo.png' %}" alt="" />
+      </div>
+      <div class="gradient">
+        <section class="home">
+          <div class="home-contents">
+            <div class="home-cta">
+              <div class="home-title">더 이상 머리 망하지 마세요.</div>
+              <div class="home-subtitle">내 머리를 알고 실패없는 머리하기</div>
+              <a class="start-button" href="#end" style="color: #883fff"
+                >🥇 가장 먼저 자라나라를 시작해보세요!</a
+              >
+            </div>
           </div>
-          <div class="home-cta">
-            <div class="home-title">더 이상 머리 망하지 마세요.</div>
-            <div class="home-subtitle">내 머리를 알고 실패없는 머리하기</div>
-            <form class="home-form" id="home-form" method="POST" action="">
-              {% csrf_token %}
-              <input
-                class="home-input"
-                type="text"
-                name="email"
-                placeholder="이메일을 입력해주세요"
-              />
-              <input class="home-button" type="button" value="시작하기" />
-            </form>
+        </section>
+        <section class="problem">
+          <div class="problem-bubble left">
+            어떤 머리를 할 지 고르기 어려워...
           </div>
-        </div>
-      </section>
-      <section class="feature">
-        <img src="{% static 'img/1.png' %}" alt="" />
-        <img src="{% static 'img/2.png' %}" alt="" />
-        <img src="{% static 'img/3.png' %}" alt="" />
-      </section>
+          <div class="problem-bubble right">
+            미용실 가면 뭐라고 말해야 하지?
+          </div>
+          <div class="problem-bubble left">
+            맨날 머리 상했다고 할 수 있는 머리가 없네 🥲
+          </div>
+        </section>
+      </div>
       <section>기능1</section>
       <section>기능2</section>
       <section>기능3</section>
       <section>자라나라를 이용 중인 분들의 이야기</section>
       <section>자주 묻는 질문</section>
+      <section class="end" id="end">
+        <form class="home-form" id="home-form" method="POST" action="">
+          {% csrf_token %}
+          <input
+            class="home-input"
+            type="text"
+            name="email"
+            placeholder="이메일을 입력해주세요"
+          />
+          <input class="home-button" type="button" value="소식받기" />
+        </form>
+      </section>
       <footer></footer>
     </div>
     <script src="{% static 'js/home.js' %}"></script>

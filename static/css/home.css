@@ -16,6 +16,11 @@
   }
 }
 
+html,
+body {
+  scroll-behavior: smooth;
+}
+
 html {
   width: 100vw;
   height: 100vh;
@@ -38,11 +43,17 @@ section {
   width: 100%;
   height: 100vh;
 
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  background: #d5bbff;
+}
 
-  background: white;
+.logo-wrapper {
+  position: fixed;
+  top: 0;
+}
+
+.logo {
+  width: 200px;
+  padding: 2rem;
 }
 
 .modal-wrapper {
@@ -104,8 +115,16 @@ section {
   cursor: pointer;
 }
 
+.gradient {
+  background: linear-gradient(to bottom, #883fff, 80%, #d5bbff);
+}
+
 .home {
-  background: linear-gradient(to bottom, #883fff, 80%, white);
+  height: 80vh;
+
+  display: flex;
+  justify-content: center;
+  background: transparent;
 }
 
 .home-contents {
@@ -114,19 +133,9 @@ section {
 
   display: flex;
   flex-direction: column;
+  align-items: center;
+  justify-content: center;
   gap: 20vh;
-}
-
-.logo-wrapper {
-  position: sticky;
-  top: 0;
-}
-
-.logo {
-  width: 180px;
-  padding: 2rem 0 2rem;
-
-  align-self: flex-start;
 }
 
 .home-cta {
@@ -135,6 +144,7 @@ section {
   display: flex;
   flex-direction: column;
   align-items: center;
+  justify-content: center;
 }
 
 .home-title {
@@ -155,9 +165,53 @@ section {
   color: #c29dff;
 }
 
+.start-button {
+  padding: 1.3rem 3rem 1.2rem;
+  margin-top: 2rem;
+
+  cursor: pointer;
+
+  background: white;
+
+  border-radius: 2rem;
+
+  font-size: 1.2rem;
+  font-weight: bold;
+}
+
+.problem {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+
+  background: transparent;
+}
+
+.problem-bubble {
+  width: 30vw;
+  padding: 1rem 3rem 1rem;
+  margin: 2rem 15vw 2rem;
+  text-align: center;
+
+  border: 2.5px solid white;
+  border-radius: 1.5rem;
+
+  font-size: 1.2rem;
+  font-weight: 600;
+  line-height: 120%;
+  word-break: keep-all;
+  color: white;
+}
+
+.right {
+  align-self: flex-end;
+}
+
 .home-form {
   width: 100%;
   padding: 3rem 0 3rem;
+
+  justify-self: center;
 
   text-align: center;
 }
@@ -218,10 +272,8 @@ section {
   }
 
   .logo {
-    width: 150px;
-    padding: 2rem 0 2rem;
-
-    align-self: flex-start;
+    width: 200px;
+    padding: 2rem;
   }
 
   .home-title {
@@ -240,6 +292,10 @@ section {
     font-weight: 600;
 
     color: #c29dff;
+  }
+
+  .start-button {
+    font-size: 1rem;
   }
 
   .home-input {
@@ -328,8 +384,8 @@ section {
   }
 
   .logo {
-    width: 120px;
-    padding: 1rem 0 1rem;
+    width: 150px;
+    padding: 1rem;
   }
 
   .home-cta {
@@ -363,6 +419,21 @@ section {
     color: #c29dff;
   }
 
+  .start-button {
+    width: 100%;
+    text-align: center;
+    font-size: 0.9rem;
+  }
+
+  .problem-bubble {
+    width: 75vw;
+    margin: 1rem;
+
+    border: 2px solid white;
+
+    font-size: 0.75rem;
+  }
+
   .home-form {
     width: 100%;
     padding: 2rem 0 2rem;
@@ -373,7 +444,7 @@ section {
   }
 
   .home-input {
-    width: 100%;
+    width: 80%;
     height: 3rem;
 
     margin: 1rem;
