@@ -56,6 +56,12 @@ section {
   padding: 2rem;
 }
 
+.logo-flex {
+  width: 150px;
+  height: 45px;
+  object-fit: cover;
+}
+
 .modal-wrapper {
   width: 100%;
   height: 100%;
@@ -242,8 +248,14 @@ section {
   justify-content: center;
 }
 
+.feat-img {
+  width: 30rem;
+  height: 25rem;
+  object-fit: cover;
+}
+
 .feat-title {
-  width: 50vw;
+  width: 60vw;
   padding: 2rem 7rem 2rem;
 
   font-size: 2.5rem;
@@ -270,12 +282,25 @@ section {
 }
 
 .home-form {
-  width: 100%;
   padding: 3rem 0 3rem;
 
   justify-self: center;
 
   text-align: center;
+}
+
+.home-text {
+  width: 100%;
+  padding: 0 2rem 0;
+
+  display: flex;
+  align-items: flex-end;
+  gap: 0.5rem;
+
+  font-size: 1.25rem;
+  font-weight: bold;
+  color: #883fff;
+  text-align: start;
 }
 
 .home-input {
@@ -305,6 +330,9 @@ section {
   font-size: 1.2rem;
   font-weight: bold;
   color: white;
+}
+
+footer {
 }
 
 /* 태블릿 */

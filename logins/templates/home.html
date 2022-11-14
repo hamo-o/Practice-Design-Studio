@@ -98,11 +98,15 @@
           있어요.
         </div>
       </section>
-      <section>자라나라를 이용 중인 분들의 이야기</section>
+      <!-- <section>자라나라를 이용 중인 분들의 이야기</section> -->
       <!-- <section>자주 묻는 질문</section> -->
       <section class="end" id="end">
         <form class="home-form" id="home-form" method="POST" action="">
           {% csrf_token %}
+          <div class="home-text">
+            <img src="{% static 'img/logo-color.png' %}" class="logo-flex" />
+            서비스 출시 알림 받기
+          </div>
           <input
             class="home-input"
             type="text"
