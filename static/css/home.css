@@ -244,11 +244,6 @@ section {
 
 .feat {
   display: flex;
-  align-items: center;
-}
-
-.feat-content {
-  display: flex;
   flex-direction: column;
   justify-content: center;
 }
