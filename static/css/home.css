@@ -244,13 +244,17 @@ section {
 
 .feat {
   display: flex;
+}
+
+.feat-content {
+  display: flex;
   flex-direction: column;
   justify-content: center;
 }
 
 .feat-img {
-  width: 30rem;
-  height: 25rem;
+  width: 20rem;
+  height: 30rem;
   object-fit: cover;
 }
 
@@ -273,6 +277,12 @@ section {
   font-size: 1.75rem;
   word-break: keep-all;
   line-height: 130%;
+}
+
+.feat-app {
+  width: 5rem;
+  height: 10rem;
+  object-fit: cover;
 }
 
 .end {
