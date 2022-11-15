@@ -245,6 +245,7 @@ section {
 .feat {
   display: flex;
   align-items: center;
+  justify-content: center;
 }
 
 .feat-content {
@@ -257,6 +258,8 @@ section {
   width: 15rem;
   height: 25rem;
   object-fit: cover;
+
+  border-radius: 1rem;
 }
 
 .feat-title {
