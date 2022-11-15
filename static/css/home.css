@@ -244,6 +244,7 @@ section {
 
 .feat {
   display: flex;
+  align-items: center;
 }
 
 .feat-content {
@@ -253,8 +254,8 @@ section {
 }
 
 .feat-img {
-  width: 20rem;
-  height: 30rem;
+  width: 15rem;
+  height: 25rem;
   object-fit: cover;
 }
 
