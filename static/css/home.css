@@ -249,10 +249,9 @@ section {
 }
 
 .feat-img {
-  height: 70vh;
+  width: 30rem;
+  height: 25rem;
   object-fit: cover;
-
-  border-radius: 1rem;
 }
 
 .feat-title {
@@ -274,12 +273,6 @@ section {
   font-size: 1.75rem;
   word-break: keep-all;
   line-height: 130%;
-}
-
-.feat-app {
-  width: 5rem;
-  height: 10rem;
-  object-fit: cover;
 }
 
 .end {
