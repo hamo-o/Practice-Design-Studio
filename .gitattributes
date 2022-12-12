@@ -1,0 +1,5 @@
+chat.gif filter=lfs diff=lfs merge=lfs -text
+account.gif filter=lfs diff=lfs merge=lfs -text
+static/img/chat.gif filter=lfs diff=lfs merge=lfs -text
+static/img/account.gif filter=lfs diff=lfs merge=lfs -text
+static/img/choose.png filter=lfs diff=lfs merge=lfs -text
