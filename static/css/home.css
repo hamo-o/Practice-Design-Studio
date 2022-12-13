@@ -211,11 +211,6 @@ section {
   color: white;
 }
 
-.right {
-  align-self: flex-end;
-  text-align: end;
-}
-
 .solution {
   height: 35vh;
   padding: 5rem;
@@ -243,20 +238,21 @@ section {
 }
 
 .feat {
+  padding: 10rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 5rem;
+}
+
+.feat-text {
   display: flex;
   flex-direction: column;
   justify-content: center;
 }
 
-.feat-img {
-  width: 30rem;
-  height: 25rem;
-  object-fit: cover;
-}
-
 .feat-title {
-  width: 60vw;
-  padding: 2rem 7rem 2rem;
+  padding: 2rem 0 2rem;
 
   font-size: 2.5rem;
   font-weight: bold;
@@ -267,12 +263,23 @@ section {
 }
 
 .feat-stitle {
-  width: 50vw;
-  padding: 2rem 7rem 2rem;
+  padding: 2rem 0 2rem;
 
   font-size: 1.5rem;
   word-break: keep-all;
   line-height: 130%;
+}
+
+.feat-img-cover {
+}
+
+.feat-img {
+  width: 30rem;
+  object-fit: cover;
+}
+
+.feat-choose-img {
+  width: 40rem;
 }
 
 .end {
@@ -335,6 +342,11 @@ section {
 footer {
 }
 
+.right {
+  align-self: flex-end;
+  text-align: end;
+}
+
 /* 태블릿 */
 
 @media (min-width: 768px) and (max-width: 991px) {
@@ -353,7 +365,6 @@ footer {
   }
 
   .home-title {
-    /* font-family: 'Cafe24Ssurround'; */
     font-size: 3rem;
     font-weight: 900;
 
@@ -363,7 +374,6 @@ footer {
   .home-subtitle {
     padding: 1rem;
 
-    /* font-family: 'Cafe24Ssurround'; */
     font-size: 1.2rem;
     font-weight: 600;
 
@@ -400,6 +410,62 @@ footer {
     font-size: 0.8rem;
     font-weight: bold;
     color: white;
+  }
+
+  .problem-bubble {
+    width: 45vw;
+    margin: 1rem 3rem 1rem;
+
+    border: 2px solid white;
+
+    font-size: 1rem;
+  }
+
+  .solution {
+    font-size: 2rem;
+  }
+
+  .feat {
+    height: 70vh;
+    padding: 8rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 2rem;
+  }
+
+  .feat-text {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  .feat-title {
+    padding: 1rem 0 1rem;
+
+    font-size: 1.5rem;
+    font-weight: bold;
+    line-height: 130%;
+    color: black;
+  }
+
+  .feat-stitle {
+    padding: 1rem 0 1rem;
+
+    font-size: 1rem;
+    line-height: 130%;
+  }
+
+  .feat-img {
+    width: 15rem;
+    object-fit: cover;
+  }
+
+  .feat-choose-img {
+    width: 20rem;
+  }
+  .end {
+    height: 70vh;
   }
 }
 
@@ -450,6 +516,10 @@ footer {
     border-radius: 1rem;
   }
 
+  .home {
+    height: 60vh;
+  }
+
   .home-contents {
     width: 80%;
     height: 100%;
@@ -472,7 +542,7 @@ footer {
   }
 
   .home-title {
-    width: 55vw;
+    width: 60vw;
     word-break: keep-all;
 
     align-self: flex-start;
@@ -497,17 +567,24 @@ footer {
 
   .start-button {
     width: 100%;
+    padding: 1rem;
+
     text-align: center;
     font-size: 0.9rem;
   }
 
   .problem-bubble {
-    width: 75vw;
+    width: 80vw;
     margin: 1rem;
 
     border: 2px solid white;
 
     font-size: 0.75rem;
+  }
+
+  .solution {
+    height: 20vh;
+    font-size: 1rem;
   }
 
   .home-form {
@@ -517,6 +594,10 @@ footer {
     display: flex;
     flex-direction: column;
     align-items: center;
+  }
+
+  .home-text {
+    font-size: 1rem;
   }
 
   .home-input {
@@ -546,5 +627,52 @@ footer {
     font-size: 0.8rem;
     font-weight: bold;
     color: white;
+  }
+
+  .end {
+    height: 50vh;
+  }
+
+  .feat {
+    height: 50vh;
+    padding: 2rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.5rem;
+  }
+
+  .feat-text {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  .feat-title {
+    padding: 1rem 0 1rem;
+
+    font-size: 1rem;
+    font-weight: bold;
+    line-height: 130%;
+    color: black;
+  }
+
+  .feat-stitle {
+    padding: 1rem 0 1rem;
+
+    font-size: 0.5rem;
+    line-height: 130%;
+  }
+
+  .feat-img-cover {
+  }
+
+  .feat-img {
+    width: 10rem;
+    object-fit: cover;
+  }
+
+  .feat-choose-img {
+    width: 12rem;
   }
 }
