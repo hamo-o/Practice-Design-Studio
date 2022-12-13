@@ -575,6 +575,8 @@ footer {
 
   .problem-bubble {
     width: 80vw;
+
+    padding: 1rem;
     margin: 1rem;
 
     border: 2px solid white;
@@ -583,6 +585,7 @@ footer {
   }
 
   .solution {
+    padding: 1rem;
     height: 20vh;
     font-size: 1rem;
   }
